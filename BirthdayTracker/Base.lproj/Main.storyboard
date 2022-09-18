@@ -126,8 +126,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Birthday" id="60B-nJ-JtZ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="P1r-sb-Awn"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="eff-Th-PJc"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="P1r-sb-Awn">
+                            <connections>
+                                <action selector="cancelTapped:" destination="BYZ-38-t0r" id="Oco-74-Jmg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="eff-Th-PJc">
+                            <connections>
+                                <action selector="saveTapped:" destination="BYZ-38-t0r" id="rbu-EC-Zjt"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="birthdatePicker" destination="yzX-re-44Y" id="M02-Ea-4IQ"/>
