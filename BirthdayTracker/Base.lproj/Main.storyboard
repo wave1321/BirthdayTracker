@@ -46,7 +46,7 @@
         <!--Add Birthday-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BirthdayTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AddBirthdayViewController" customModule="BirthdayTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,8 +95,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzX-re-44Y">
-                                <rect key="frame" x="30" y="340" width="380" height="42"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzX-re-44Y">
+                                <rect key="frame" x="30" y="340" width="320" height="250"/>
                                 <date key="date" timeIntervalSinceReferenceDate="692917200.69159198">
                                     <!--2022-12-16 21:00:00 +0000-->
                                 </date>
@@ -129,6 +129,11 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="P1r-sb-Awn"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="eff-Th-PJc"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="birthdatePicker" destination="yzX-re-44Y" id="M02-Ea-4IQ"/>
+                        <outlet property="firstNameTextField" destination="a3g-rR-kAN" id="6lS-0S-NmH"/>
+                        <outlet property="lastNameTextField" destination="hPN-77-wwS" id="5yZ-Z0-NeF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
