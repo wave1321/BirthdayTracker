@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		841C68B228D77783009C48D9 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C68B128D77783009C48D9 /* Birthday.swift */; };
 		8459DF4728D6097F00890BA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459DF4628D6097F00890BA4 /* AppDelegate.swift */; };
 		8459DF4928D6097F00890BA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459DF4828D6097F00890BA4 /* SceneDelegate.swift */; };
 		8459DF4B28D6097F00890BA4 /* AddBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459DF4A28D6097F00890BA4 /* AddBirthdayViewController.swift */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		841C68B128D77783009C48D9 /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
 		8459DF4328D6097F00890BA4 /* BirthdayTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8459DF4628D6097F00890BA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8459DF4828D6097F00890BA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 				8459DF5428D6098100890BA4 /* LaunchScreen.storyboard */,
 				8459DF5728D6098100890BA4 /* Info.plist */,
 				8459DF4F28D6097F00890BA4 /* BirthdayTracker.xcdatamodeld */,
-				841C68B128D77783009C48D9 /* Birthday.swift */,
 				84F20AC128D8B96E00BA7EDB /* BirthdaysTableViewController.swift */,
 			);
 			path = BirthdayTracker;
@@ -148,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F20AC228D8B96E00BA7EDB /* BirthdaysTableViewController.swift in Sources */,
-				841C68B228D77783009C48D9 /* Birthday.swift in Sources */,
 				8459DF4B28D6097F00890BA4 /* AddBirthdayViewController.swift in Sources */,
 				8459DF4728D6097F00890BA4 /* AppDelegate.swift in Sources */,
 				8459DF4928D6097F00890BA4 /* SceneDelegate.swift in Sources */,
