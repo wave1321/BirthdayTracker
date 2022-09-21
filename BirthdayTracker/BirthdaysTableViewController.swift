@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 class BirthdaysTableViewController: UITableViewController {
 
@@ -25,7 +26,6 @@ class BirthdaysTableViewController: UITableViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest = Birthday.fetchRequest() as NSFetchRequest<Birthday>
-        
         let sortDescriptorD = NSSortDescriptor(key: "birthdate",
          ascending: true)
         let sortDescriptor1 = NSSortDescriptor(key: "lastName",
@@ -36,9 +36,11 @@ class BirthdaysTableViewController: UITableViewController {
         
         do {
             birthdays = try context.fetch(fetchRequest)
+            
         } catch let error {
             print("Не удалось загрузить данные из-за ошибки: \(error).")
         }
+        
         tableView.reloadData()
     }
 
@@ -86,6 +88,13 @@ class BirthdaysTableViewController: UITableViewController {
         
         if birthdays.count > indexPath.row {
         let birthday = birthdays[indexPath.row]
+            
+        // Удаляем уведомление
+        if let identifier = birthday.birthdayId {
+            let center = UNUserNotificationCenter.current()
+            center.removePendingNotificationRequests(withIdentifiers: [identifier])
+        }
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         context.delete(birthday)
